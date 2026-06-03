@@ -1,0 +1,11 @@
+# KiCad
+hardware/*-backups/
+hardware/fp-info-cache
+
+# PlatformIO
+firmware/.pio/
+firmware/.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

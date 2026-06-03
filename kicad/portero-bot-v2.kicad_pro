@@ -1,0 +1,33 @@
+{
+  "board": {
+    "design_settings": {}
+  },
+  "boards": [],
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "portero-bot-v2.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.2,
+        "track_width": 0.25
+      }
+    ]
+  },
+  "schematic": {
+    "legacy_lib_list": []
+  },
+  "sheets": [
+    [
+      "77c9c2aa-85e6-4f2d-b5f1-38094a225163",
+      ""
+    ]
+  ],
+  "text_variables": {}
+}

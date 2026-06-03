@@ -1,0 +1,618 @@
+[
+ {
+  "ref": "C1",
+  "value": "1uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "C2",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C3",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C4",
+  "value": "4.7uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "C5",
+  "value": "10nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "C6",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C7",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C8",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C9",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C10",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C11",
+  "value": "100nF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": "Desacople: corregido 100uF→100nF (Flux error)"
+ },
+ {
+  "ref": "C14",
+  "value": "22pF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "C15",
+  "value": "22pF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "C16",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "C17",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "C20",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "C21",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "C22",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "C23",
+  "value": "100uF",
+  "part": "Generic Capacitor",
+  "fp_corr": "Capacitor_SMD:C_1210_3225Metric",
+  "lcsc": "",
+  "nota": "Bulk buck: 100uF/35V ceramico 1210"
+ },
+ {
+  "ref": "D1",
+  "value": "SS34-E3/57T",
+  "part": "SS34-E3/57T",
+  "fp_corr": "Diode_SMD:D_SMA",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "D2",
+  "value": "SMAJ24CA-TR",
+  "part": "SMAJ24CA-TR",
+  "fp_corr": "Diode_SMD:D_SMA",
+  "lcsc": "C132946",
+  "nota": ""
+ },
+ {
+  "ref": "D3",
+  "value": "1N4148WS-7-F",
+  "part": "1N4148WS-7-F",
+  "fp_corr": "Diode_SMD:D_SOD-323",
+  "lcsc": "",
+  "nota": "Flyback rele: 1N4148 SOD-323 ok (carga DC baja)"
+ },
+ {
+  "ref": "D4",
+  "value": "1N4148WS-7-F",
+  "part": "1N4148WS-7-F",
+  "fp_corr": "Diode_SMD:D_SOD-323",
+  "lcsc": "",
+  "nota": "Flyback rele: 1N4148 SOD-323 ok (carga DC baja)"
+ },
+ {
+  "ref": "D5",
+  "value": "1N4148WS-7-F",
+  "part": "1N4148WS-7-F",
+  "fp_corr": "Diode_SMD:D_SOD-323",
+  "lcsc": "",
+  "nota": "Flyback rele: 1N4148 SOD-323 ok (carga DC baja)"
+ },
+ {
+  "ref": "F1",
+  "value": "0ZCC0150BF2C",
+  "part": "0ZCC0150BF2C",
+  "fp_corr": "Fuse:Fuse_1206_3216Metric",
+  "lcsc": "",
+  "nota": "PTC 1.5A hold"
+ },
+ {
+  "ref": "ISO1",
+  "value": "PC817X1CSP9F",
+  "part": "PC817X1CSP9F",
+  "fp_corr": "Package_DIP:DIP-4_W7.62mm",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "ISO2",
+  "value": "PC817X1CSP9F",
+  "part": "PC817X1CSP9F",
+  "fp_corr": "Package_DIP:DIP-4_W7.62mm",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "ISO3",
+  "value": "PC817X1CSP9F",
+  "part": "PC817X1CSP9F",
+  "fp_corr": "Package_DIP:DIP-4_W7.62mm",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "J1",
+  "value": "DC005",
+  "part": "DC005",
+  "fp_corr": "Connector_BarrelJack:BarrelJack_Horizontal",
+  "lcsc": "C431533",
+  "nota": ""
+ },
+ {
+  "ref": "J2",
+  "value": "HR911105A",
+  "part": "HR911105A",
+  "fp_corr": "Connector_RJ:RJ45_Hanrun_HR911105A_Horizontal",
+  "lcsc": "C12074",
+  "nota": ""
+ },
+ {
+  "ref": "J3",
+  "value": "USB Micro B",
+  "part": "USB Micro B",
+  "fp_corr": "Connector_USB:USB_Micro-B_Wuerth_614105150721_Vertical",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "J4",
+  "value": "KF301-2P",
+  "part": "KF301-2P",
+  "fp_corr": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "J5",
+  "value": "KF301-2P",
+  "part": "KF301-2P",
+  "fp_corr": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "J6",
+  "value": "KF301-2P",
+  "part": "KF301-2P",
+  "fp_corr": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "J7",
+  "value": "Pin Header 01x04 2.54mm Vertical",
+  "part": "Pin Header 01x04 2.54mm Vertical",
+  "fp_corr": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "K1",
+  "value": "SRD-05VDC-SL-C",
+  "part": "SRD-05VDC-SL-C",
+  "fp_corr": "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "K2",
+  "value": "SRD-05VDC-SL-C",
+  "part": "SRD-05VDC-SL-C",
+  "fp_corr": "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "K3",
+  "value": "SRD-05VDC-SL-C",
+  "part": "SRD-05VDC-SL-C",
+  "fp_corr": "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "L1",
+  "value": "22uH",
+  "part": "Generic Inductor",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": "Inductor de potencia 22uH 6x6mm Isat>=2A"
+ },
+ {
+  "ref": "L2",
+  "value": "22uH",
+  "part": "Generic Inductor",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": "Inductor de potencia 22uH 6x6mm Isat>=2A"
+ },
+ {
+  "ref": "LED1",
+  "value": "0603GBD0790S01",
+  "part": "0603GBD0790S01",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "LED2",
+  "value": "KT-0603R",
+  "part": "KT-0603R",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "LED3",
+  "value": "KT-0603R",
+  "part": "KT-0603R",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "LED4",
+  "value": "KT-0603R",
+  "part": "KT-0603R",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "LED5",
+  "value": "LTST-C190KSKT",
+  "part": "LTST-C190KSKT",
+  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "Q1",
+  "value": "2N2222A",
+  "part": "2N2222A",
+  "fp_corr": "Package_TO_SOT_THT:TO-92_Inline",
+  "lcsc": "C118536",
+  "nota": ""
+ },
+ {
+  "ref": "Q2",
+  "value": "2N2222A",
+  "part": "2N2222A",
+  "fp_corr": "Package_TO_SOT_THT:TO-92_Inline",
+  "lcsc": "C118536",
+  "nota": ""
+ },
+ {
+  "ref": "Q3",
+  "value": "2N2222A",
+  "part": "2N2222A",
+  "fp_corr": "Package_TO_SOT_THT:TO-92_Inline",
+  "lcsc": "C118536",
+  "nota": ""
+ },
+ {
+  "ref": "R1",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R2",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R3",
+  "value": "12.4k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R4",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R5",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R6",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R7",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R8",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R9",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R10",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R11",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R12",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R13",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R19",
+  "value": "330",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R20",
+  "value": "330",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R21",
+  "value": "330",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R22",
+  "value": "26.1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R23",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R24",
+  "value": "44.2k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R25",
+  "value": "10k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "R26",
+  "value": "1k",
+  "part": "Generic Resistor",
+  "fp_corr": "Resistor_SMD:R_0603_1608Metric",
+  "lcsc": "",
+  "nota": ""
+ },
+ {
+  "ref": "SW1",
+  "value": "KH-6X6X5H-STM",
+  "part": "KH-6X6X5H-STM",
+  "fp_corr": "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK",
+  "lcsc": "C2837531",
+  "nota": ""
+ },
+ {
+  "ref": "SW2",
+  "value": "KH-6X6X5H-STM",
+  "part": "KH-6X6X5H-STM",
+  "fp_corr": "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK",
+  "lcsc": "C2837531",
+  "nota": ""
+ },
+ {
+  "ref": "U1",
+  "value": "ESP32-WROOM-32E-N16",
+  "part": "ESP32-WROOM-32E-N16",
+  "fp_corr": "RF_Module:ESP32-WROOM-32",
+  "lcsc": "C473012",
+  "nota": ""
+ },
+ {
+  "ref": "U2",
+  "value": "W5500",
+  "part": "W5500",
+  "fp_corr": "Package_QFP:LQFP-48_7x7mm_P0.5mm",
+  "lcsc": "C32843",
+  "nota": ""
+ },
+ {
+  "ref": "U3",
+  "value": "CH340C",
+  "part": "CH340C",
+  "fp_corr": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+  "lcsc": "C84681",
+  "nota": ""
+ },
+ {
+  "ref": "U4",
+  "value": "MP2307DN-HW-LF-Z",
+  "part": "MP2307DN-HW-LF-Z",
+  "fp_corr": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm",
+  "lcsc": "C14272",
+  "nota": ""
+ },
+ {
+  "ref": "U5",
+  "value": "MP2307DN-HW-LF-Z",
+  "part": "MP2307DN-HW-LF-Z",
+  "fp_corr": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm",
+  "lcsc": "C14272",
+  "nota": ""
+ },
+ {
+  "ref": "Y1",
+  "value": "NX3225GA-25MHZ-STD-CRG-2",
+  "part": "NX3225GA-25MHZ-STD-CRG-2",
+  "fp_corr": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+  "lcsc": "C438901",
+  "nota": ""
+ }
+]

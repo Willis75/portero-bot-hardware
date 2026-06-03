@@ -32,6 +32,7 @@ if bom:
 
 def footprint(d):
     if d.startswith("R"): return "Resistor_SMD:R_0603_1608Metric"
+    if d.startswith("LED"): return "LED_SMD:LED_0603_1608Metric"
     if d.startswith("L"): return "Inductor_SMD:L_6.3x6.3_H3"
     if d.startswith("C"):
         if d in ("C16","C17","C20","C21","C22","C23"):

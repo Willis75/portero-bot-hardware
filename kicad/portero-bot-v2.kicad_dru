@@ -1,0 +1,6 @@
+(version 1)
+
+# JLCPCB Standard: min drill 0.2mm
+(rule "min_drill_jlcpcb"
+   (constraint hole_size (min 0.2mm))
+)

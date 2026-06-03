@@ -1,0 +1,539 @@
+[
+ {
+  "name": "SPI_SCLK",
+  "pins": [
+   "U2.SCLK",
+   "U1.IO18"
+  ]
+ },
+ {
+  "name": "W5500_EXRES",
+  "pins": [
+   "U2.EXRES1",
+   "R3.P1"
+  ]
+ },
+ {
+  "name": "VIN_FUSED",
+  "pins": [
+   "U5.EN",
+   "U5.IN",
+   "F1.P2"
+  ]
+ },
+ {
+  "name": "BST_3V3",
+  "pins": [
+   "C23.P1",
+   "U5.BS"
+  ]
+ },
+ {
+  "name": "RELAY3_GPIO",
+  "pins": [
+   "R9.P1",
+   "U1.IO25",
+   "R12.P1"
+  ]
+ },
+ {
+  "name": "RELAY1_LED",
+  "pins": [
+   "LED2.A",
+   "R10.P2"
+  ]
+ },
+ {
+  "name": "ETH_XI",
+  "pins": [
+   "Y1.1",
+   "U2.XI/CLKIN",
+   "C14.P1"
+  ]
+ },
+ {
+  "name": "SPI_MOSI",
+  "pins": [
+   "U2.MOSI",
+   "U1.IO23"
+  ]
+ },
+ {
+  "name": "3V3",
+  "pins": [
+   "R5.P2",
+   "U2.AVDD",
+   "U2.PMODE1",
+   "U2.VDD",
+   "U2.PMODE0",
+   "U2.PMODE2",
+   "R1.P1",
+   "C21.P1",
+   "C3.P1",
+   "C7.P1",
+   "C9.P1",
+   "J7.Pin_1",
+   "L2.P2",
+   "C2.P1",
+   "J2.~",
+   "R4.P2",
+   "C6.P1",
+   "U1.3V3",
+   "R22.P1",
+   "C8.P1",
+   "C10.P1",
+   "R6.P2",
+   "C20.P1",
+   "R13.P1",
+   "R2.P1"
+  ]
+ },
+ {
+  "name": "FB_5V",
+  "pins": [
+   "R24.P2",
+   "R25.P1",
+   "U4.FB"
+  ]
+ },
+ {
+  "name": "RELAY3_BASE",
+  "pins": [
+   "Q3.B",
+   "ISO3.EMITTER"
+  ]
+ },
+ {
+  "name": "SW_BUCK_3V3",
+  "pins": [
+   "C23.P2",
+   "U5.SW",
+   "L2.P1"
+  ]
+ },
+ {
+  "name": "BST_5V",
+  "pins": [
+   "C22.P1",
+   "U4.BS"
+  ]
+ },
+ {
+  "name": "RELAY2_NO",
+  "pins": [
+   "J5.2",
+   "K2.NO"
+  ]
+ },
+ {
+  "name": "RELAY3_OPTO_COL",
+  "pins": [
+   "R21.P1",
+   "ISO3.COLLECTOR"
+  ]
+ },
+ {
+  "name": "RELAY1_GPIO",
+  "pins": [
+   "R7.P1",
+   "U1.IO32",
+   "R10.P1"
+  ]
+ },
+ {
+  "name": "SPI_MISO",
+  "pins": [
+   "U2.MISO",
+   "U1.IO19"
+  ]
+ },
+ {
+  "name": "RELAY1_COM",
+  "pins": [
+   "J4.1",
+   "K1.COM"
+  ]
+ },
+ {
+  "name": "ETH_RST",
+  "pins": [
+   "U2.~RST",
+   "U1.IO27",
+   "R6.P1"
+  ]
+ },
+ {
+  "name": "RELAY2_COIL_LOW",
+  "pins": [
+   "D4.A",
+   "Q2.C",
+   "K2.A2"
+  ]
+ },
+ {
+  "name": "ETH_RX_P",
+  "pins": [
+   "U2.RXP",
+   "J2.~"
+  ]
+ },
+ {
+  "name": "RELAY3_COM",
+  "pins": [
+   "K3.COM",
+   "J6.1"
+  ]
+ },
+ {
+  "name": "ETH_RX_N",
+  "pins": [
+   "U2.RXN",
+   "J2.~"
+  ]
+ },
+ {
+  "name": "RELAY1_OPTO_LED",
+  "pins": [
+   "R7.P2",
+   "ISO1.ANODE"
+  ]
+ },
+ {
+  "name": "ETH_INT",
+  "pins": [
+   "R5.P1",
+   "U2.~INT",
+   "U1.IO26"
+  ]
+ },
+ {
+  "name": "ETH_TX_P",
+  "pins": [
+   "U2.TXP",
+   "J2.~"
+  ]
+ },
+ {
+  "name": "RELAY2_COM",
+  "pins": [
+   "J5.1",
+   "K2.COM"
+  ]
+ },
+ {
+  "name": "RELAY3_LED",
+  "pins": [
+   "LED4.A",
+   "R12.P2"
+  ]
+ },
+ {
+  "name": "UART0_RX",
+  "pins": [
+   "J7.Pin_4",
+   "U3.TXD",
+   "U1.RXD0"
+  ]
+ },
+ {
+  "name": "SW_BUCK",
+  "pins": [
+   "C22.P2",
+   "L1.P1",
+   "U4.SW"
+  ]
+ },
+ {
+  "name": "GND",
+  "pins": [
+   "SW1.2",
+   "SW1.4",
+   "Y1.GND",
+   "Q1.E",
+   "C11.P2",
+   "U2.AGND",
+   "U2.RSVD",
+   "U2.GND",
+   "J1.2",
+   "J1.3",
+   "SW2.2",
+   "SW2.4",
+   "Q3.E",
+   "C21.P2",
+   "U5.GND",
+   "U5.EPAD",
+   "C4.P2",
+   "LED1.K",
+   "ISO3.CATHODE",
+   "C3.P2",
+   "C5.P2",
+   "C7.P2",
+   "C9.P2",
+   "LED5.K",
+   "C14.P2",
+   "LED3.K",
+   "C1.P2",
+   "ISO1.CATHODE",
+   "J7.Pin_2",
+   "LED4.K",
+   "LED2.K",
+   "U3.GND",
+   "D2.2",
+   "C2.P2",
+   "J2.SHIELD",
+   "Q2.E",
+   "C6.P2",
+   "U1.GND",
+   "C15.P2",
+   "C8.P2",
+   "R25.P2",
+   "R3.P2",
+   "J3.S1",
+   "J3.S2",
+   "J3.S4",
+   "J3.GND",
+   "J3.S6",
+   "J3.S5",
+   "J3.S3",
+   "C17.P2",
+   "C10.P2",
+   "R23.P2",
+   "C20.P2",
+   "C16.P2",
+   "ISO2.CATHODE",
+   "U4.GND",
+   "U4.EPAD"
+  ]
+ },
+ {
+  "name": "RELAY2_GPIO",
+  "pins": [
+   "R11.P1",
+   "R8.P1",
+   "U1.IO33"
+  ]
+ },
+ {
+  "name": "USB_D_N",
+  "pins": [
+   "U3.UD-",
+   "J3.D-"
+  ]
+ },
+ {
+  "name": "RELAY2_BASE",
+  "pins": [
+   "Q2.B",
+   "ISO2.EMITTER"
+  ]
+ },
+ {
+  "name": "LED5_5V_IND",
+  "pins": [
+   "R26.P2",
+   "LED5.A"
+  ]
+ },
+ {
+  "name": "VIN_PROT",
+  "pins": [
+   "D1.K",
+   "F1.P1"
+  ]
+ },
+ {
+  "name": "UART0_TX",
+  "pins": [
+   "J7.Pin_3",
+   "U3.RXD",
+   "U1.TXD0"
+  ]
+ },
+ {
+  "name": "W5500_1V2O",
+  "pins": [
+   "U2.1V2O",
+   "C5.P1"
+  ]
+ },
+ {
+  "name": "RELAY1_BASE",
+  "pins": [
+   "Q1.B",
+   "ISO1.EMITTER"
+  ]
+ },
+ {
+  "name": "BOOT",
+  "pins": [
+   "SW1.3",
+   "SW1.1",
+   "U1.IO0",
+   "R2.P2"
+  ]
+ },
+ {
+  "name": "VIN_BUCK",
+  "pins": [
+   "U4.EN",
+   "U4.IN"
+  ]
+ },
+ {
+  "name": "RELAY3_COIL_LOW",
+  "pins": [
+   "Q3.C",
+   "K3.A2",
+   "D5.A"
+  ]
+ },
+ {
+  "name": "RELAY2_OPTO_COL",
+  "pins": [
+   "R20.P1",
+   "ISO2.COLLECTOR"
+  ]
+ },
+ {
+  "name": "5V",
+  "pins": [
+   "R21.P2",
+   "C11.P1",
+   "R20.P2",
+   "R24.P1",
+   "D3.K",
+   "R26.P1",
+   "D4.K",
+   "U3.VCC",
+   "K3.A1",
+   "D5.K",
+   "J3.VBUS",
+   "K2.A1",
+   "C17.P1",
+   "C16.P1",
+   "L1.P2",
+   "K1.A1",
+   "R19.P2"
+  ]
+ },
+ {
+  "name": "USB_D_P",
+  "pins": [
+   "U3.UD+",
+   "J3.D+"
+  ]
+ },
+ {
+  "name": "RELAY3_NO",
+  "pins": [
+   "K3.NO",
+   "J6.2"
+  ]
+ },
+ {
+  "name": "RELAY2_LED",
+  "pins": [
+   "R11.P2",
+   "LED3.A"
+  ]
+ },
+ {
+  "name": "ETH_XO",
+  "pins": [
+   "Y1.3",
+   "U2.XO",
+   "C15.P1"
+  ]
+ },
+ {
+  "name": "LED_3V3_PWR",
+  "pins": [
+   "LED1.A",
+   "R13.P2"
+  ]
+ },
+ {
+  "name": "ETH_TX_N",
+  "pins": [
+   "U2.TXN",
+   "J2.~"
+  ]
+ },
+ {
+  "name": "ETH_CS",
+  "pins": [
+   "U2.~SCS",
+   "R4.P1",
+   "U1.IO5"
+  ]
+ },
+ {
+  "name": "RELAY3_OPTO_LED",
+  "pins": [
+   "R9.P2",
+   "ISO3.ANODE"
+  ]
+ },
+ {
+  "name": "RELAY1_NO",
+  "pins": [
+   "J4.2",
+   "K1.NO"
+  ]
+ },
+ {
+  "name": "RELAY2_OPTO_LED",
+  "pins": [
+   "R8.P2",
+   "ISO2.ANODE"
+  ]
+ },
+ {
+  "name": "W5500_TOCAP",
+  "pins": [
+   "U2.TOCAP",
+   "C4.P1"
+  ]
+ },
+ {
+  "name": "VIN_RAW",
+  "pins": [
+   "D1.A",
+   "J1.1",
+   "D2.1"
+  ]
+ },
+ {
+  "name": "EN",
+  "pins": [
+   "R1.P2",
+   "SW2.3",
+   "SW2.1",
+   "C1.P1",
+   "U1.EN"
+  ]
+ },
+ {
+  "name": "RELAY1_OPTO_COL",
+  "pins": [
+   "ISO1.COLLECTOR",
+   "R19.P1"
+  ]
+ },
+ {
+  "name": "FB_3V3",
+  "pins": [
+   "U5.FB",
+   "R22.P2",
+   "R23.P1"
+  ]
+ },
+ {
+  "name": "RELAY1_COIL_LOW",
+  "pins": [
+   "Q1.C",
+   "D3.A",
+   "K1.A2"
+  ]
+ }
+]

@@ -323,7 +323,7 @@
   "ref": "LED1",
   "value": "0603GBD0790S01",
   "part": "0603GBD0790S01",
-  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "fp_corr": "LED_SMD:LED_0603_1608Metric",
   "lcsc": "",
   "nota": ""
  },
@@ -331,7 +331,7 @@
   "ref": "LED2",
   "value": "KT-0603R",
   "part": "KT-0603R",
-  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "fp_corr": "LED_SMD:LED_0603_1608Metric",
   "lcsc": "",
   "nota": ""
  },
@@ -339,7 +339,7 @@
   "ref": "LED3",
   "value": "KT-0603R",
   "part": "KT-0603R",
-  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "fp_corr": "LED_SMD:LED_0603_1608Metric",
   "lcsc": "",
   "nota": ""
  },
@@ -347,7 +347,7 @@
   "ref": "LED4",
   "value": "KT-0603R",
   "part": "KT-0603R",
-  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "fp_corr": "LED_SMD:LED_0603_1608Metric",
   "lcsc": "",
   "nota": ""
  },
@@ -355,7 +355,7 @@
   "ref": "LED5",
   "value": "LTST-C190KSKT",
   "part": "LTST-C190KSKT",
-  "fp_corr": "Inductor_SMD:L_6.3x6.3_H3",
+  "fp_corr": "LED_SMD:LED_0603_1608Metric",
   "lcsc": "",
   "nota": ""
  },

@@ -6705,7 +6705,7 @@
 				)
 			)
 		)
-		(property "Value" "0603GBD0790S01"
+		(property "Value" "KT-0603YG"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "9dd6a278-0b21-488a-a123-c52453e67cf4")
@@ -7352,7 +7352,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WS-7-F"
+		(property "Value" "1N5819WS-7-F"
 			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "07780063-ec40-4901-9d24-03caebc5c971")
@@ -10275,7 +10275,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WS-7-F"
+		(property "Value" "1N5819WS-7-F"
 			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "afcb715e-ba98-462d-a9e2-18fca477a51a")
@@ -15185,7 +15185,7 @@
 				)
 			)
 		)
-		(property "Value" "LTST-C190KSKT"
+		(property "Value" "KT-0603R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "29c566aa-b7ea-4adc-b56a-341a1015a1f2")
@@ -16990,7 +16990,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4148WS-7-F"
+		(property "Value" "1N5819WS-7-F"
 			(at 0.1 1.9 0)
 			(layer "F.Fab")
 			(uuid "b0d698c4-f754-43cf-bce1-40f02479cea5")
@@ -25413,46 +25413,6 @@
 		(uuid "f57d83aa-5b3d-4b58-b196-de6096cb6d0c")
 	)
 	(segment
-		(start 121.5 129.8896)
-		(end 121.5 127.76)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED5_5V_IND")
-		(uuid "03073a5c-ddeb-490a-b786-6cbc4c369d34")
-	)
-	(segment
-		(start 81.125 132.5)
-		(end 84 132.5)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED5_5V_IND")
-		(uuid "16214910-c8af-438b-9a25-d981095b842d")
-	)
-	(segment
-		(start 88.961 137.461)
-		(end 113.9286 137.461)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED5_5V_IND")
-		(uuid "b96d2d33-8804-4438-9562-0f83e06722e7")
-	)
-	(segment
-		(start 84 132.5)
-		(end 88.961 137.461)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED5_5V_IND")
-		(uuid "ca704e9b-ff29-4e08-8429-f5579875bcf2")
-	)
-	(segment
-		(start 113.9286 137.461)
-		(end 121.5 129.8896)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED5_5V_IND")
-		(uuid "ef3f8d00-7496-4c64-9391-eb8f2f5995a0")
-	)
-	(segment
 		(start 134.685 129.31)
 		(end 136.715 127.28)
 		(width 0.25)
@@ -26459,6 +26419,46 @@
 		(layer "B.Cu")
 		(net "BST_3V3")
 		(uuid "d27e0c3d-4f44-4bf2-bed9-333e8d406e12")
+	)
+	(segment
+		(start 121.5 129.8896)
+		(end 121.5 127.76)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED5_5V_IND")
+		(uuid "03073a5c-ddeb-490a-b786-6cbc4c369d34")
+	)
+	(segment
+		(start 81.125 132.5)
+		(end 84 132.5)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED5_5V_IND")
+		(uuid "16214910-c8af-438b-9a25-d981095b842d")
+	)
+	(segment
+		(start 88.961 137.461)
+		(end 113.9286 137.461)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED5_5V_IND")
+		(uuid "b96d2d33-8804-4438-9562-0f83e06722e7")
+	)
+	(segment
+		(start 84 132.5)
+		(end 88.961 137.461)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED5_5V_IND")
+		(uuid "ca704e9b-ff29-4e08-8429-f5579875bcf2")
+	)
+	(segment
+		(start 113.9286 137.461)
+		(end 121.5 129.8896)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED5_5V_IND")
+		(uuid "ef3f8d00-7496-4c64-9391-eb8f2f5995a0")
 	)
 	(embedded_fonts no)
 )

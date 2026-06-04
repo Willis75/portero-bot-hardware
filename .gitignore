@@ -1,6 +1,28 @@
 # KiCad
 hardware/*-backups/
 hardware/fp-info-cache
+kicad/.history/
+kicad/*.lck
+kicad/~*.lck
+kicad/*.kicad_prl
+kicad/*.bak-*
+kicad/*.bak
+kicad/portero-bot-v2.dsn
+kicad/portero-bot-v2.ses
+kicad/drc-*.txt
+kicad/DRC.rpt
+*.kicad_pro.bak-*
+*.kicad_sch.bak-*
+
+# KiCad reports en raíz
+/portero-bot-v2-drc.rpt
+/portero-bot-v2-erc.rpt
+
+# Data backups y artefactos intermedios
+data/*.bak
+data/instances.json
+data/netlist_resolved.json
+data/route_context.json
 
 # PlatformIO
 firmware/.pio/

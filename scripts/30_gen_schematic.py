@@ -50,6 +50,10 @@ def padmap(ref, func):
     if ref.startswith('LED'): return LED.get(func,[func])
     if ref.startswith('D'): return DIODE.get(func,[func])
     if ref=='J3': return USB.get(func,[func])
+    if ref=='J2':
+        if re.fullmatch(r'\d+', str(func)): return [str(func)]
+        if str(func).upper() == 'SHIELD': return ['SH']
+        return [func]
     if re.match(r'^[RCLF]\d+$',ref): return {'P1':['1'],'P2':['2']}.get(func,[func])
     if ref=='J7': return {'Pin_1':['1'],'Pin_2':['2'],'Pin_3':['3'],'Pin_4':['4']}.get(func,[func])
     return [func]
@@ -126,9 +130,13 @@ doc += [inst(r) for r in order]; doc += [conns(r) for r in order]
 doc += ['  (sheet_instances (path "/" (page "1")))', ')']
 open(os.path.join(KIC,"portero-bot-v2.kicad_sch"),"w", encoding="utf-8").write("\n".join(doc))
 
-proj={"board":{"design_settings":{}},"boards":[],"libraries":{"pinned_footprint_libs":[],"pinned_symbol_libs":[]},
- "meta":{"filename":"portero-bot-v2.kicad_pro","version":1},
- "net_settings":{"classes":[{"name":"Default","clearance":0.2,"track_width":0.25}]},
- "schematic":{"legacy_lib_list":[]},"sheets":[[RT,""]],"text_variables":{}}
-json.dump(proj, open(os.path.join(KIC,"portero-bot-v2.kicad_pro"),"w"), indent=2)
+pro_path = os.path.join(KIC, "portero-bot-v2.kicad_pro")
+if not os.path.exists(pro_path):
+    proj={"board":{"design_settings":{}},"boards":[],"libraries":{"pinned_footprint_libs":[],"pinned_symbol_libs":[]},
+     "meta":{"filename":"portero-bot-v2.kicad_pro","version":1},
+     "net_settings":{"classes":[{"name":"Default","clearance":0.1,"track_width":0.25,"via_diameter":0.6,"via_drill":0.3}]},
+     "schematic":{"legacy_lib_list":[]},"sheets":[[RT,""]],"text_variables":{}}
+    json.dump(proj, open(pro_path,"w"), indent=2)
+else:
+    print(f"  (skipping .kicad_pro: file exists, preserving DRC/netclass/via config)")
 print(f"OK  componentes={len(order)}  pines={sum(len(v) for v in comp_pins.values())}  pads-no-numericos={sorted(flag)}")

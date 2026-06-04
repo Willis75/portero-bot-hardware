@@ -1,6 +1,10 @@
 (version 1)
-
-# JLCPCB Standard: min drill 0.2mm
 (rule "min_drill_jlcpcb"
-   (constraint hole_size (min 0.2mm))
+    (constraint hole_size (min 0.2mm))
+)
+(rule "clearance_jlcpcb"
+    (constraint clearance (min 0.10mm))
+)
+(rule "hole_clearance_jlcpcb"
+    (constraint hole_clearance (min 0.10mm))
 )

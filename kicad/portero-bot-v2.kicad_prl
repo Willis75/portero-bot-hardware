@@ -5,14 +5,14 @@
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
       "pads": 1.0,
       "shapes": 1.0,
       "tracks": 1.0,
-      "vias": 1.0,
+      "vias": 0.8999999761581421,
       "zones": 0.6
     },
     "prototype_zone_fills": false,
@@ -33,7 +33,6 @@
       "vias",
       "footprint_text",
       "footprint_anchors",
-      "ratsnest",
       "grid",
       "footprints_front",
       "footprints_back",
@@ -53,7 +52,7 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "00000000_00000000_55555555_5755555c",
+    "visible_layers": "00000000_00000000_00000008_82000027",
     "zone_display_mode": 0
   },
   "git": {

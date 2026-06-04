@@ -33,6 +33,7 @@ USB Micro B,J3,USB_Micro-B_Wuerth_614105150721_Vertical,C46390
 KF301-2P,J4,TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal,C474881
 KF301-2P,J5,TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal,C474881
 KF301-2P,J6,TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal,C474881
+Pin Header 01x04 2.54mm Vertical,J7,PinHeader_1x04_P2.54mm_Vertical,C124378
 SRD-05VDC-SL-C,K1,Relay_SPDT_SANYOU_SRD_Series_Form_C,C35449
 SRD-05VDC-SL-C,K2,Relay_SPDT_SANYOU_SRD_Series_Form_C,C35449
 SRD-05VDC-SL-C,K3,Relay_SPDT_SANYOU_SRD_Series_Form_C,C35449

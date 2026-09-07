@@ -1,0 +1,54 @@
+#!/bin/sh
+# Rechaza el commit si un .py staged trae un escape roto en una cadena.
+#
+# Por que solo ESTE chequeo y no run_arneses entero: la bateria completa tarda ~20 s y un
+# hook lento se vuelve `--no-verify` por costumbre, que es peor que no tenerlo. Este mira
+# unicamente los .py staged y tarda decimas.
+#
+# Que caza (detalle en el propio arnes):
+#   1. escape invalido ('\C', '\All'): avisa, y escalado a error ciega a otros arneses.
+#   2. escape VALIDO que se comio una letra ('\b' = backspace): NO avisa. El 06-sep-2026
+#      habia tres, uno de ellos en la ruta de un comando que viajaba por SSH.
+#
+# Lee del INDICE (git show :ruta), no del disco: lo que se commitea es el indice.
+# Saltarlo: git commit --no-verify
+
+# En rebase/merge/cherry-pick no hay nada que juzgar: el contenido no lo escribio nadie ahora.
+GIT_DIR=$(git rev-parse --git-dir 2>/dev/null)
+[ -d "$GIT_DIR/rebase-merge" ] && exit 0
+[ -d "$GIT_DIR/rebase-apply" ] && exit 0
+[ -f "$GIT_DIR/MERGE_HEAD" ] && exit 0
+[ -f "$GIT_DIR/CHERRY_PICK_HEAD" ] && exit 0
+
+RAIZ=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+
+# El arnes se busca en varios sitios porque este hook vive en cinco repos con layouts
+# distintos (intelliagency no tiene scripts/, el vault tampoco). Fijar una sola ruta
+# significaba que en el repo equivocado el hook salia por el `exit 0` de abajo y NO
+# vigilaba nada, en silencio y con cara de instalado.
+ARNES=""
+for CAND in "$RAIZ/scripts/test_escapes_validos.py" \
+            "$RAIZ/ops/test_escapes_validos.py" \
+            "$RAIZ/tools/test_escapes_validos.py" \
+            "$RAIZ/test_escapes_validos.py"; do
+    [ -f "$CAND" ] && { ARNES="$CAND"; break; }
+done
+
+# Si el arnes no esta (rama vieja, checkout parcial), no se bloquea el commit: este hook
+# vigila escapes, no la integridad del repo. run_arneses ya reporta DESAPARECIDO.
+[ -f "$ARNES" ] || exit 0
+
+git diff --cached --name-only --diff-filter=ACM | grep -q '\.py$' || exit 0
+
+PY=$(command -v python 2>/dev/null || command -v python3 2>/dev/null)
+[ -n "$PY" ] || exit 0
+
+SALIDA=$("$PY" "$ARNES" --desde-git 2>&1)
+if [ $? -ne 0 ]; then
+    echo "$SALIDA"
+    echo ""
+    echo "  pre-commit: escape roto en un .py staged. Commit RECHAZADO."
+    echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
+    exit 1
+fi
+exit 0

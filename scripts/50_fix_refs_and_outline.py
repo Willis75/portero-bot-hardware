@@ -1,4 +1,4 @@
-"""
+r"""
 Fix refs with spaces/special-chars + add Edge.Cuts outline.
 Run with KiCad Python: "C:\Program Files\KiCad\10.0\bin\python.exe" scripts/50_fix_refs_and_outline.py
 """

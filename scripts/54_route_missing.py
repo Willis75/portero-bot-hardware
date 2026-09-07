@@ -1,4 +1,4 @@
-"""
+r"""
 Route the 5 missing connections via B.Cu bypasses.
 Run: "C:\Program Files\KiCad\10.0\bin\python.exe" scripts/54_route_missing.py
 """

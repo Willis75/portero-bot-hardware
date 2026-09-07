@@ -1,4 +1,4 @@
-"""
+r"""
 Fix shorts caused by overlapping vias after via-size correction.
 Deletes the shorting via from each pair (the one listed second in DRC).
 Run: "C:\Program Files\KiCad\10.0\bin\python.exe" scripts/52_fix_shorts.py

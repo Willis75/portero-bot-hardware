@@ -1,4 +1,4 @@
-"""
+r"""
 Fix vias with zero/micro diameter placed by freerouting.
 Resizes any via with diameter < 0.4mm to JLCPCB standard (0.6mm / 0.3mm drill).
 Run: "C:\Program Files\KiCad\10.0\bin\python.exe" scripts/51_fix_via_sizes.py

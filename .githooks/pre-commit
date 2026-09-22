@@ -40,23 +40,24 @@ if [ -f "$CHECK_ENVIO" ]; then
     fi
 fi
 
-# RC-NNN: amarre codigo<->matriz, provisional (T-4C.6, 21-sep-2026). Va DESPUES de
-# RC-300 (Bill) y ANTES del arnes de escapes: dispara si hay algo staged bajo cony/, reglas/,
-# scripts/ u ops/ (desde T-4B.2 la matriz cita lineas de scripts/*.py y ops/*.py: editar ahi
-# corre las citas en silencio si el check no mira), y ademas corre los 9 arneses de cony/
-# (ops/run_arneses.py --solo cony) SOLO cuando lo staged toca cony/ -- un cambio en
-# reglas/matriz.md o en scripts/ no reejecuta arneses que no cambiaron (hook lento = --no-verify).
-CHECK_RC_CONY="$RAIZ/reglas/check_rc_cony.py"
-if [ -f "$CHECK_RC_CONY" ]; then
+# RC-NNN: amarre codigo<->matriz, provisional (T-4C.6, 21-sep-2026; extendido a Bill en T-4B.3,
+# ex check_rc_cony.py). Va DESPUES de RC-300 (Bill) y ANTES del arnes de escapes: dispara si hay
+# algo staged bajo cony/, reglas/, scripts/ u ops/ (desde T-4B.2 la matriz cita lineas de
+# scripts/*.py y ops/*.py, incluidos bill_*.py/emailer.py: editar ahi corre las citas en silencio
+# si el check no mira), y ademas corre los 9 arneses de cony/ (ops/run_arneses.py --solo cony)
+# SOLO cuando lo staged toca cony/ -- un cambio en reglas/matriz.md o en scripts/ no reejecuta
+# arneses que no cambiaron (hook lento = --no-verify).
+CHECK_RC="$RAIZ/reglas/check_rc.py"
+if [ -f "$CHECK_RC" ]; then
     # Incluye D: borrar reglas/matriz.md o deuda.txt tambien debe pasar por la puerta (falla cerrado).
     if git diff --cached --name-only --diff-filter=ACMD | grep -qE '^(cony|reglas|scripts|ops)/'; then
         PY_RC=$(command -v python 2>/dev/null || command -v python3 2>/dev/null)
         if [ -n "$PY_RC" ]; then
-            SALIDA_RC=$("$PY_RC" "$CHECK_RC_CONY" 2>&1)
+            SALIDA_RC=$("$PY_RC" "$CHECK_RC" 2>&1)
             if [ $? -ne 0 ]; then
                 echo "$SALIDA_RC"
                 echo ""
-                echo "  pre-commit: reglas/check_rc_cony.py encontro hallazgos. Commit RECHAZADO."
+                echo "  pre-commit: reglas/check_rc.py encontro hallazgos. Commit RECHAZADO."
                 echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
                 exit 1
             fi

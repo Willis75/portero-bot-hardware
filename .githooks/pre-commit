@@ -107,7 +107,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # Barrido de escritores sin guarda (A1, revision Fable ronda 3, 19-sep-2026) -- solo en el repo
-# HAF (donde vive ops/barrido_escritores.py; los otros 6 repos que comparten este hook no tienen
+# HAF (donde vive ops/barrido_escritores.py; los otros 5 repos que comparten este hook -- camaras,
+# envasado-liquidos-hardware, intelliagency, portero-bot-hardware, claustro4-acceso -- no tienen
 # CONTPAQi ni esta guarda, asi que ahi el bloque de abajo sale por el mismo `[ -f ... ] || exit 0`
 # de arriba que ya cubre "el arnes no esta"). A diferencia del chequeo de escapes, este SI lee
 # de disco (no del indice): es un invariante sobre el arbol completo, no un diff por archivo, y

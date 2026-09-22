@@ -40,15 +40,16 @@ if [ -f "$CHECK_ENVIO" ]; then
     fi
 fi
 
-# RC-2NN (Cony): amarre codigo<->matriz, provisional (T-4C.6, 21-sep-2026). Va DESPUES de
-# RC-300 (Bill) y ANTES del arnes de escapes: solo dispara si hay .py/.md/.txt staged bajo
-# cony/ o reglas/, y ademas corre los 9 arneses de cony/ (ops/run_arneses.py --solo cony)
-# cuando lo staged toca cony/ especificamente -- un cambio SOLO en reglas/matriz.md no
-# reejecuta arneses que no cambiaron.
+# RC-NNN: amarre codigo<->matriz, provisional (T-4C.6, 21-sep-2026). Va DESPUES de
+# RC-300 (Bill) y ANTES del arnes de escapes: dispara si hay algo staged bajo cony/, reglas/,
+# scripts/ u ops/ (desde T-4B.2 la matriz cita lineas de scripts/*.py y ops/*.py: editar ahi
+# corre las citas en silencio si el check no mira), y ademas corre los 9 arneses de cony/
+# (ops/run_arneses.py --solo cony) SOLO cuando lo staged toca cony/ -- un cambio en
+# reglas/matriz.md o en scripts/ no reejecuta arneses que no cambiaron (hook lento = --no-verify).
 CHECK_RC_CONY="$RAIZ/reglas/check_rc_cony.py"
 if [ -f "$CHECK_RC_CONY" ]; then
     # Incluye D: borrar reglas/matriz.md o deuda.txt tambien debe pasar por la puerta (falla cerrado).
-    if git diff --cached --name-only --diff-filter=ACMD | grep -qE '^(cony|reglas)/'; then
+    if git diff --cached --name-only --diff-filter=ACMD | grep -qE '^(cony|reglas|scripts|ops)/'; then
         PY_RC=$(command -v python 2>/dev/null || command -v python3 2>/dev/null)
         if [ -n "$PY_RC" ]; then
             SALIDA_RC=$("$PY_RC" "$CHECK_RC_CONY" 2>&1)

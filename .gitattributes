@@ -1,0 +1,4 @@
+# Hooks versionados: SIEMPRE LF. Git Bash ejecuta estos scripts con `sh`, y un `#!/bin/sh`
+# terminado en CRLF da "bad interpreter: No such file or directory" — el hook fallaria en
+# cada clon nuevo en Windows, que es justo lo contrario de por que se versionan.
+.githooks/* text eol=lf

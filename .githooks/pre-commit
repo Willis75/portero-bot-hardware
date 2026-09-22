@@ -22,6 +22,60 @@ GIT_DIR=$(git rev-parse --git-dir 2>/dev/null)
 
 RAIZ=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
 
+# RC-300: el repo no puede guardar un runner de Bill armado para enviar a clientes (21-sep-2026).
+# Va ANTES de todo lo demas porque los bloques de abajo salen con `exit 0` cuando no hay .py
+# staged, y lo que este cuida son .cmd. Solo en HAF: en los otros repos el script no existe.
+CHECK_ENVIO="$RAIZ/ops/check_envio_bill_apagado.py"
+if [ -f "$CHECK_ENVIO" ]; then
+    PY_E=$(command -v python 2>/dev/null || command -v python3 2>/dev/null)
+    if [ -n "$PY_E" ]; then
+        SALIDA_E=$("$PY_E" "$CHECK_ENVIO" 2>&1)
+        if [ $? -ne 0 ]; then
+            echo "$SALIDA_E"
+            echo ""
+            echo "  pre-commit: envio de Bill armado en un runner. Commit RECHAZADO."
+            echo "  Encender el envio es decision del usuario: se cambia ENVIO_BILL en el mismo commit."
+            exit 1
+        fi
+    fi
+fi
+
+# RC-2NN (Cony): amarre codigo<->matriz, provisional (T-4C.6, 21-sep-2026). Va DESPUES de
+# RC-300 (Bill) y ANTES del arnes de escapes: solo dispara si hay .py/.md/.txt staged bajo
+# cony/ o reglas/, y ademas corre los 9 arneses de cony/ (ops/run_arneses.py --solo cony)
+# cuando lo staged toca cony/ especificamente -- un cambio SOLO en reglas/matriz.md no
+# reejecuta arneses que no cambiaron.
+CHECK_RC_CONY="$RAIZ/reglas/check_rc_cony.py"
+if [ -f "$CHECK_RC_CONY" ]; then
+    # Incluye D: borrar reglas/matriz.md o deuda.txt tambien debe pasar por la puerta (falla cerrado).
+    if git diff --cached --name-only --diff-filter=ACMD | grep -qE '^(cony|reglas)/'; then
+        PY_RC=$(command -v python 2>/dev/null || command -v python3 2>/dev/null)
+        if [ -n "$PY_RC" ]; then
+            SALIDA_RC=$("$PY_RC" "$CHECK_RC_CONY" 2>&1)
+            if [ $? -ne 0 ]; then
+                echo "$SALIDA_RC"
+                echo ""
+                echo "  pre-commit: reglas/check_rc_cony.py encontro hallazgos. Commit RECHAZADO."
+                echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
+                exit 1
+            fi
+            if git diff --cached --name-only --diff-filter=ACM | grep -qE '^cony/'; then
+                RUNNER_RC="$RAIZ/ops/run_arneses.py"
+                if [ -f "$RUNNER_RC" ]; then
+                    SALIDA_ARNES_CONY=$("$PY_RC" "$RUNNER_RC" --solo cony 2>&1)
+                    if [ $? -ne 0 ]; then
+                        echo "$SALIDA_ARNES_CONY"
+                        echo ""
+                        echo "  pre-commit: ops/run_arneses.py --solo cony revento. Commit RECHAZADO."
+                        echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
+                        exit 1
+                    fi
+                fi
+            fi
+        fi
+    fi
+fi
+
 # El arnes se busca en varios sitios porque este hook vive en cinco repos con layouts
 # distintos (intelliagency no tiene scripts/, el vault tampoco). Fijar una sola ruta
 # significaba que en el repo equivocado el hook salia por el `exit 0` de abajo y NO
@@ -51,4 +105,23 @@ if [ $? -ne 0 ]; then
     echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
     exit 1
 fi
+
+# Barrido de escritores sin guarda (A1, revision Fable ronda 3, 19-sep-2026) -- solo en el repo
+# HAF (donde vive ops/barrido_escritores.py; los otros 6 repos que comparten este hook no tienen
+# CONTPAQi ni esta guarda, asi que ahi el bloque de abajo sale por el mismo `[ -f ... ] || exit 0`
+# de arriba que ya cubre "el arnes no esta"). A diferencia del chequeo de escapes, este SI lee
+# de disco (no del indice): es un invariante sobre el arbol completo, no un diff por archivo, y
+# el barrido en si (`ops/test_freno_periodo.py`) ya trabaja asi desde el 19-sep-2026.
+BARRIDO="$RAIZ/ops/barrido_escritores.py"
+if [ -f "$BARRIDO" ]; then
+    SALIDA_B=$("$PY" "$BARRIDO" 2>&1)
+    if [ $? -ne 0 ]; then
+        echo "$SALIDA_B"
+        echo ""
+        echo "  pre-commit: escritor sin guarda de host+periodo. Commit RECHAZADO."
+        echo "  Saltarlo (solo si sabes por que): git commit --no-verify"
+        exit 1
+    fi
+fi
+
 exit 0

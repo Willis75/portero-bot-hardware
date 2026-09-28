@@ -26,8 +26,8 @@ data/               Netlist procesado (nets_clean.json, instances.json, master.j
 scripts/            Pipeline reproducible (ver abajo)
 kicad/              Esquemático generado (.kicad_sch + .kicad_pro)
 docs/               Revisión de diseño, BOM revisado, referencia, prompt de Flux
-hardware/           (vacío) destino del PCB layout en KiCad
-firmware/           (vacío) firmware PlatformIO ESP32
+hardware/           (vacío) el PCB layout terminó viviendo en kicad/, no aquí
+firmware/           Firmware PlatformIO ESP32 (HTTP API + OTA + Ethernet/WiFi) ya escrito
 ```
 
 ### Pipeline reproducible
@@ -59,14 +59,8 @@ expanden a todos sus pads.
 6. **CH340C pin V3** y **MP2307 COMP/SS:** añadir componentes de datasheet si faltaban.
 
 ## Cómo seguir (sugerido)
-- Abrir `kicad/portero-bot-v2.kicad_pro` en **KiCad 8** y correr **ERC**.
-- Resolver los pendientes 2–6.
-- `Tools → Update PCB from Schematic` para crear el PCB (footprints + ratsnest).
-- Rutear respetando: **keep-out de la antena del ESP32**, **pares Ethernet TX/RX**
-  cortos y simétricos con GND continuo debajo, **cobre + vías térmicas** bajo los MP2307.
-- DRC → exportar Gerbers → JLCPCB/PCBWay.
 
-### Tareas donde Claude Code ayuda mucho
-- Instalar `kicad-cli` y correr ERC / exportar netlist para **verificar conectividad** de verdad.
-- Ajustar los mapas de pines en `scripts/30_gen_schematic.py` y regenerar.
-- Empezar el firmware en `firmware/` (API HTTP ya definida en `README.md`).
+🔴 **Sección obsoleta** — el ruteo, DRC (0 errores) y export de Gerbers/BOM/CPL ya se hicieron
+(`JLCPCB-UPLOAD/` en la raíz del repo) y el firmware ESP32 (HTTP API + OTA + Ethernet/WiFi) ya
+está escrito en `firmware/src/main.cpp`. Falta describir aquí el estado real y el siguiente paso
+(¿pedido a JLCPCB ya hecho? ¿firmware probado en hardware real?).

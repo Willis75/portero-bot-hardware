@@ -58,9 +58,8 @@ expanden a todos sus pads.
 5. **Polaridad LEDs/diodos y pines del relé** (A1/A2/COM/NO): best-effort, confirmar con footprint.
 6. **CH340C pin V3** y **MP2307 COMP/SS:** añadir componentes de datasheet si faltaban.
 
-## Cómo seguir (sugerido)
+## Estado real y siguiente paso
 
-🔴 **Sección obsoleta** — el ruteo, DRC (0 errores) y export de Gerbers/BOM/CPL ya se hicieron
-(`JLCPCB-UPLOAD/` en la raíz del repo) y el firmware ESP32 (HTTP API + OTA + Ethernet/WiFi) ya
-está escrito en `firmware/src/main.cpp`. Falta describir aquí el estado real y el siguiente paso
-(¿pedido a JLCPCB ya hecho? ¿firmware probado en hardware real?).
+- Hecho: ruteo, DRC (0 errores), Gerbers/BOM/CPL (`JLCPCB-UPLOAD/`); firmware ESP32 (HTTP API + OTA +
+  Ethernet/WiFi) en `firmware/src/main.cpp`.
+- Sin confirmar: pedido a JLCPCB y prueba del firmware en hardware real.
